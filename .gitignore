@@ -1,0 +1,22 @@
+# code editors
+.idea/
+.vscode/
+
+# artifacts
+dist/
+
+# cache
+.eslintcache
+
+# node
+node_modules
+
+# environment
+.env
+.env.local
+
+# macOS
+.DS_Store
+
+# credentials
+service-account-credentials.json

@@ -1,0 +1,54 @@
+{
+  "scripts": {
+    "start": "NODE_ENV=PRODUCTION node dist/index.js",
+    "dev": "nodemon --exec ts-node index.ts",
+    "build": "tsc",
+    "prepare": "husky install",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@bull-board/api": "^3.9.0",
+    "@bull-board/express": "^3.9.0",
+    "body-parser": "^1.19.1",
+    "bull": "^4.2.0",
+    "connect-ensure-login": "^0.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-jsdoc-swagger": "^1.6.7",
+    "express-session": "^1.17.2",
+    "googleapis": "^92.0.0",
+    "handlebars": "^4.7.7",
+    "nodemailer": "^6.7.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/bull": "^3.15.7",
+    "@types/connect-ensure-login": "^0.1.7",
+    "@types/express": "^4.17.13",
+    "@types/express-session": "^1.17.4",
+    "@types/node": "^17.0.8",
+    "@types/nodemailer": "^6.4.4",
+    "@types/passport": "^1.0.7",
+    "@types/passport-local": "^1.0.34",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*.+(ts*|js*)": "prettier --write"
+  }
+}
